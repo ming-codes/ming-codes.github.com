@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "assets/assetMap.json": "assets/assetMap.json",
+    "assets/ming-codes-fastboot.js": "assets/ming-codes-fastboot-e9b9c3bb6ccc5b8c5ae1d28a126d3fdf.js",
+    "assets/ming-codes.css": "assets/ming-codes-47f78ac32569aa3b194215bc65e2c32c.css",
+    "assets/ming-codes.js": "assets/ming-codes-715da1600b76d4cda0ef531cf2afcd0e.js",
+    "assets/vendor.css": "assets/vendor-cb587864e2d03b72320aa90c864ca6c8.css",
+    "assets/vendor.js": "assets/vendor-a80aa1b2d90cd9d47ec2b1038a559e2e.js",
+    "moment/fastboot-moment-timezone.js": "moment/fastboot-moment-timezone-578ab4bc24839c1fa18fc484b2cf5d0d.js",
+    "moment/fastboot-moment.js": "moment/fastboot-moment-fc1d02c2a35021ee4ca1a6f87a5a64c7.js",
+    "profile.jpg": "profile-85671a7153d8a56a403c4d6b2481e052.jpg"
+  },
+  "prepend": ""
+}
