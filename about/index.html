@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+7849e23c%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+63b7cbd2%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
 <!-- EMBER_CLI_FASTBOOT_TITLE -->
 
     <link integrity="" rel="stylesheet" href="/assets/vendor-cb587864e2d03b72320aa90c864ca6c8.css">
@@ -17,8 +17,8 @@
     
   </head>
   <body>
-    <script type="x/boundary" id="fastboot-body-start"></script><div id="ember276" class="ember-view"><nav id="nav" class="active ">
-  <button id="nav__button">
+    <script type="x/boundary" id="fastboot-body-start"></script><div id="ember276" class="ember-view"><nav id="nav">
+  <button id="nav__button" aria-label="Toggle Navigation">
     <svg id="nav__icon" viewbox="0 0 50 50">
       <line x1="15" x2="35" y1="15px" y2="1em" stroke="white" stroke-width="5" stroke-linecap="round" class="top"></line>
       <line x1="15" x2="35" y1="25px" y2="25px" stroke="white" stroke-width="5" stroke-linecap="round" class="middle"></line>
@@ -26,10 +26,25 @@
     </svg>
   </button>
 
-  <ul id="nav__list" class="hide vbox">
-    <li><a href="/about" id="ember278" class="active ember-view">About</a></li>
-    <li><a href="/blog" id="ember279" class="ember-view">Blog</a></li>
-    <li><a href="/projects" id="ember280" class="ember-view">Projects</a></li>
+  <ul id="nav__list" class="vbox">
+    <li class="item">
+      <a href="/about" id="ember278" class="active ember-view">About</a>
+      <span class="hide">
+        Who I Am
+      </span>
+    </li>
+    <li class="item">
+      <a href="/blog" id="ember279" class="ember-view">Blog</a>
+      <span class="hide">
+        How I Think
+      </span>
+    </li>
+    <li class="item">
+      <a href="/projects" id="ember280" class="ember-view">Projects</a>
+      <span class="hide">
+        What I Did
+      </span>
+    </li>
   </ul>
 </nav>
 
@@ -192,8 +207,8 @@
 </div><script type="x/boundary" id="fastboot-body-end"></script>
 
     <script src="/assets/vendor-a80aa1b2d90cd9d47ec2b1038a559e2e.js" integrity="sha256-G1SnCxSxJX2LUZl3WHWpRT9v3c0geavyX2J/COyPIz0= sha512-zTrYDXjZ3jDY6N4bHzB7IGTuqbcgVzKkW1L9+CLdXjtLBbwBOIZ1pxnK0xWd2nqeJ3qP/AZkQiOVHE79txXvfw==" ></script>
-    <script src="/assets/ming-codes-2f5cbd84835d6b9f5c2d291ac8acf1da.js" integrity="sha256-C/ZlZkHQFNffokazD030e9tfyDieFVf47m/H4/XUmYo= sha512-ZOlFELGK3R7OHPASjR2IeHPg7GiHdoG0TjHbGKhqokscCPMpFcsVo6/rhEgxTBd78LnJPV3iCGgDpAeeQydHOQ==" ></script>
+    <script src="/assets/ming-codes-2dd3b0da6d4f645d9b31460a5cb912dd.js" integrity="sha256-mZouo80dsAiHQldg3AZ57x3LUkX8OFxw/AoZXn1zagU= sha512-XjwllTK6NXmjvkhdnb7Zk741bbYwqrJtFL6e1DpzknxrJt6FI8//7Lsvg6wio0/4Jvx6ZOY4fBcntVOhocIAPw==" ></script>
 
-    
+    <script src="/sw-registration-96562d3f04aac78eb85b38ec252eac9a.js" integrity="sha256-m9taKmEombeKW3ABisX58cE1OIW7P1UxEgJxvbasBpE= sha512-KSw98VPHlicvLPY/RsFAVNSsOvfipKkx+Zrnlz1IBLroWJtkm4WgLXZcdzsDmkCttblhlchmGiiCQ6tAy8UBtQ==" ></script>
   </body>
 </html>
