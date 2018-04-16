@@ -1,0 +1,9 @@
+#blog {
+  min-width: 320px;
+
+  &__container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+}

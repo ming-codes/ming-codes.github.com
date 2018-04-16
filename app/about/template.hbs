@@ -1,0 +1,92 @@
+<div id="about">
+  <header id="about__profile">
+    <div id="about__profile__headshot"></div>
+
+    <div id="about__profile__info">
+      <h1 id="about__profile__name">Hi, I'm {{model.profile.name}}!</h1>
+      <small id="about__profile__headline">{{model.profile.headline}}</small>
+      <ul id="about__profile__social" class="hbox">
+        {{#each model.profile.social as |social|}}
+          <li>
+            <a href="{{social.href}}" target="_blank" rel="noopener">
+              {{fa-icon social.icon}}
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </header>
+
+  <main id="about__cv">
+    <section>
+      <h2>What I am all about.</h2>
+      <p>{{model.about}}</p>
+    </section>
+
+    <section>
+      <h2>Expertise</h2>
+
+      {{#each model.expertise as |expertise|}}
+        <article>
+          <h3>{{expertise.name}}</h3>
+
+          <p>...</p>
+        </article>
+      {{/each}}
+    </section>
+
+    <section id="about__cv__skills">
+      <h2>Skills</h2>
+      <ul>
+        {{#each model.skills as |skill|}}
+          <li>{{skill.name}}</li>
+        {{/each}}
+      </ul>
+    </section>
+
+    <section id="about__cv__experience">
+      <h2>Experience</h2>
+
+      {{#each model.experience as |experience|}}
+        <article>
+          <small>
+            {{moment-format experience.timeframe.start "MMM YYYY"}}
+            ~
+            {{#if experience.timeframe.end}}
+              {{moment-format experience.timeframe.end "MMM YYYY"}}
+            {{else}}
+              Present
+            {{/if}}
+          </small>
+          <h3>
+            {{experience.titles.firstObject.name}}
+          </h3>
+          <h4>{{experience.name}}</h4>
+
+          <p>{{experience.location}}</p>
+
+          <!--
+          <ul>
+            {{#each experience.responsibilities as |responsibility|}}
+              <li>{{responsibility}}</li>
+            {{/each}}
+          </ul>
+          -->
+        </article>
+      {{/each}}
+    </section>
+
+    <section id="about__cv__education">
+      <h2>Education</h2>
+      {{#each model.education as |education|}}
+        <article>
+          <small>{{education.year}}</small>
+          <h3>{{education.name}}</h3>
+          <h4>{{education.issuer}}</h4>
+
+          <p>{{education.location}}</p>
+        </article>
+      {{/each}}
+    </section>
+  </main>
+</div>

@@ -1,0 +1,23 @@
+<nav id="nav">
+  <button id="nav__button" aria-label="Toggle Navigation" onclick={{action 'toggleNavigation'}}>
+    <svg id="nav__icon" viewBox="0 0 50 50">
+      <line class="top" x1="15" x2="35" y1="15px" y2="1em" stroke="white" stroke-width="5" stroke-linecap="round"></line>
+      <line class="middle" x1="15" x2="35" y1="25px" y2="25px" stroke="white" stroke-width="5" stroke-linecap="round"></line>
+      <line class="bottom" x1="15" x2="35" y1="35px" y2="1em" stroke="white" stroke-width="5" stroke-linecap="round"></line>
+    </svg>
+  </button>
+
+  <ul id="nav__list" class="vbox"  onclick={{action 'toggleNavigation'}}>
+    <li class="item">
+      {{link-to "About" "about"}}
+    </li>
+    <li class="item">
+      {{link-to "Blog" "blog"}}
+    </li>
+    <li class="item">
+      {{link-to "Projects" "projects"}}
+    </li>
+  </ul>
+</nav>
+
+{{outlet}}
