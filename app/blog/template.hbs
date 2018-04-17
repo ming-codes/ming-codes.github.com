@@ -1,18 +1,10 @@
 <div id="blog">
-  <div id="blog__container" class="contextual">
-    <h2>Title</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lobortis quam. Nulla a magna quis massa lacinia venenatis quis non ante. Cras viverra lacinia ex vitae eleifend. Morbi sodales odio eu lectus vulputate accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur egestas vitae dolor et aliquet. Sed ornare aliquam lacus. Suspendisse condimentum dictum quam, ut condimentum felis cursus vel. Nam nec eros sit amet ante interdum vehicula. Aliquam aliquam risus porttitor nulla lobortis, malesuada dapibus dolor mollis. Aliquam tempor eros eget aliquet pretium. Cras condimentum vitae turpis at sagittis. Donec rutrum, libero vitae eleifend rhoncus, nisl massa laoreet quam, ut luctus metus nulla non nisl. Donec quis enim euismod, sodales ipsum sed, feugiat neque.</p>
+  {{#each model as |post|}}
+    <article>
+      <small>{{moment-format post.published "MMMM DD, YYYY"}}</small>
+      <h2>{{post.title}}</h2>
 
-    <h2>Title</h2>
-    <p>Curabitur tempus elit sodales, convallis libero eu, laoreet ante. Duis tincidunt nibh nec fermentum feugiat. Fusce pellentesque cursus nibh sed rutrum. In hac habitasse platea dictumst. Quisque dolor lacus, porta eget arcu finibus, gravida ultricies eros. Pellentesque gravida dictum mauris, ac mattis magna elementum ac. Maecenas porttitor dolor metus, eu fermentum ex condimentum ac. Donec ut dolor rhoncus, hendrerit lectus nec, sodales sapien. Proin nisl ligula, feugiat nec porta vitae, eleifend in odio. Sed varius mauris vitae turpis euismod, ac hendrerit quam porttitor. Nam facilisis rhoncus odio vitae dictum. Nulla tellus ex, varius sit amet venenatis vitae, ultrices a risus. In rutrum orci at arcu pellentesque, sed dictum elit mollis. Nam eu fermentum dolor. Nam vitae magna lacus.</p>
-
-    <h2>Title</h2>
-    <p>Pellentesque eget est ac ex suscipit dictum. Aliquam posuere leo eu congue elementum. Vestibulum malesuada odio in dui laoreet, nec tristique tellus malesuada. Maecenas nibh turpis, maximus cursus placerat id, vestibulum ac leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque id magna sapien. Ut pharetra nulla a justo placerat rutrum ut eu magna. Vivamus porttitor tincidunt placerat. Nulla dui ligula, aliquet sagittis volutpat sed, ultricies sed mi. Proin eget commodo dui. Mauris rhoncus aliquet leo et fringilla. Nulla facilisi. Etiam placerat semper orci quis sollicitudin.</p>
-
-    <h2>Title</h2>
-    <p>Phasellus iaculis, nisl ut scelerisque tempus, elit purus facilisis justo, nec tincidunt purus nisl id enim. Aliquam sit amet augue quis neque blandit venenatis. Aliquam non lacus nibh. Nam in leo sit amet dolor volutpat ornare. Phasellus convallis iaculis neque sed condimentum. Nulla ultricies, est eu fermentum lacinia, nisi dolor mattis eros, nec imperdiet nisi ante sed lacus. Nullam lacus enim, laoreet ut urna nec, convallis luctus neque. Aliquam ac sem a dui varius facilisis a vel mi. Fusce ac augue mauris. Vestibulum non turpis ut lectus lacinia pretium. Fusce et est id velit porttitor tincidunt. Aenean non libero luctus ipsum molestie tincidunt.</p>
-
-    <h2>Title</h2>
-    <p>Donec molestie velit quis risus accumsan cursus. Fusce placerat ullamcorper lorem, quis vulputate eros congue quis. Nam volutpat vitae sem semper scelerisque. Duis aliquam, dolor a lacinia consequat, lorem dui sodales mauris, in tempus augue arcu eget metus. Nunc maximus libero sit amet dui facilisis, sit amet dignissim quam maximus. Vivamus tempus eros quis suscipit sodales. Nulla id ante cursus, scelerisque massa sit amet, suscipit ante. Praesent neque lectus, finibus ac ultrices a, convallis nec diam.</p>
-  </div>
+      {{{post.content}}}
+    </article>
+  {{/each}}
 </div>
