@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+709d1c99%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+00f4a5d9%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#fff">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,8 +17,263 @@
 <meta name="msapplication-config" content="/browserconfig.xml">
 <!-- EMBER_CLI_FASTBOOT_TITLE -->
 
-    <link integrity="" rel="stylesheet" href="/assets/vendor-cb587864e2d03b72320aa90c864ca6c8.css">
-    <link integrity="" rel="stylesheet" href="/assets/ming-codes-ce2389c16a3a4a527de082c8891036f5.css">
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700);
+
+      @import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700);
+
+      .hbox,
+      .vbox {
+        display: inline-flex;
+        list-style: none;
+      }
+
+      #nav__list,
+      .hbox,
+      .vbox {
+        list-style: none;
+      }
+
+      #about__cv h3,
+      #nav__list {
+        text-transform: uppercase;
+      }
+
+      #about__cv h3 {
+        line-height: 1;
+        color: #2b2b3d;
+      }
+
+      * {
+        font-family: inherit;
+        color: inherit;
+        box-sizing: border-box;
+        -webkit-backface-visibility: hidden;
+        margin: 0;
+      }
+
+      .vbox {
+        flex-direction: column;
+      }
+
+      .hbox {
+        flex-direction: row;
+      }
+
+      #nav__button {
+        top: 5px;
+        left: 5px;
+        position: absolute;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        background: #000;
+        border: none;
+        border-radius: 0;
+        outline: 0;
+      }
+
+      #nav__list {
+        position: fixed;
+        z-index: 1;
+        min-width: 320px;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        transform: perspective(200px) translateZ(200px);
+      }
+
+      #nav__button {
+        width: 45px;
+        height: 45px;
+      }
+
+      #nav__button .top {
+        font-size: 15px;
+      }
+
+      #nav__button .bottom {
+        font-size: 35px;
+      }
+
+      #nav__button .middle {
+        opacity: 1;
+      }
+
+      #nav__list {
+        font-family: Lato;
+        letter-spacing: 5px;
+        margin: 0;
+        padding: 15.625%;
+        background: rgba(0,0,0,.9);
+        justify-content: center;
+      }
+
+      #nav__list [href] {
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+      }
+
+      #nav__list .item {
+        margin: 3.125% 0;
+      }
+
+      @media screen {
+        #about__profile {
+          position: relative;
+          color: #fff;
+          text-shadow: 0 0 5px #000;
+        }
+
+        #about__profile,
+        #about__profile__headshot {
+          height: 100vh;
+        }
+
+        #about__profile__info {
+          position: absolute;
+          bottom: 5vmin;
+          left: 0;
+          right: 0;
+        }
+
+        #about__cv,
+        #about__profile {
+          width: 100%;
+        }
+
+        #about__cv section {
+          padding: 50px 15.625%;
+        }
+      }
+
+      @media screen and (min-width:600px) {
+        #nav {
+          position: fixed;
+          z-index: 1;
+        }
+
+        #about__cv,
+        #about__profile {
+          width: 50%;
+        }
+
+        #about__profile {
+          position: fixed;
+        }
+
+        #about__cv {
+          float: right;
+        }
+      }
+
+      #about__profile__headshot {
+        background-image: url(/profile-85671a7153d8a56a403c4d6b2481e052.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #about__profile__headshot::before {
+        content: "";
+        background: linear-gradient(-30deg,rgba(42,84,245,.5) 0,rgba(42,84,245,.5) 40%,transparent 60%,transparent 100%);
+      }
+
+      #about__profile__info {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 5%;
+      }
+
+      #about__profile__name {
+        font-size: 36px;
+        line-height: 1;
+        margin: 0;
+      }
+
+      #about__profile__headline {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: 300;
+        line-height: 1.4;
+      }
+
+      #about__profile__social {
+        margin: 0;
+        padding: 0;
+      }
+
+      #about__profile__social a {
+        display: block;
+        font-size: 12px;
+        width: 34px;
+      }
+
+      #about__cv section:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      #about__cv h2 {
+        margin-bottom: 5px;
+        color: #bebece;
+        font-size: 18px;
+        line-height: 1.8em;
+        font-weight: 700;
+      }
+
+      #about__cv h3 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      #about__cv p {
+        margin: 0 0 16px;
+      }
+
+      #about__cv article {
+        margin-bottom: 40px;
+      }
+
+      .fa {
+        display: inline-block;
+      }
+
+      @font-face {
+        font-family: FontAwesome;
+        src: url(fonts/fontawesome-webfont.eot?v=4.7.0);
+        src: url(fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'),url(fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .fa {
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .fa-twitter:before {
+        content: "\f099";
+      }
+
+      .fa-github:before {
+        content: "\f09b";
+      }
+
+      .fa-linkedin:before {
+        content: "\f0e1";
+      }
+
+    </style>
+    <link integrity="" rel="preload" href="/assets/vendor-cb587864e2d03b72320aa90c864ca6c8.57ef89ca.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link integrity="" rel="stylesheet" href="/assets/vendor-cb587864e2d03b72320aa90c864ca6c8.57ef89ca.css"></noscript>
+    <link integrity="" rel="preload" href="/assets/ming-codes-f37db7d30088ec2ac1e0c35e8fe61e3e.669669ea.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link integrity="" rel="stylesheet" href="/assets/ming-codes-f37db7d30088ec2ac1e0c35e8fe61e3e.669669ea.css"></noscript>
+    <script>!function(u){"use strict";var e=function(e,t,n){var r,o=u.document,a=o.createElement("link");if(t)r=t;else{var l=(o.body||o.getElementsByTagName("head")[0]).childNodes;r=l[l.length-1]}var i=o.styleSheets;a.rel="stylesheet",a.href=e,a.media="only x",function e(t){if(o.body)return t();setTimeout(function(){e(t)})}(function(){r.parentNode.insertBefore(a,t?r:r.nextSibling)});var d=function(e){for(var t=a.href,n=i.length;n--;)if(i[n].href===t)return e();setTimeout(function(){d(e)})};function s(){a.addEventListener&&a.removeEventListener("load",s),a.media=n||"all"}return a.addEventListener&&a.addEventListener("load",s),(a.onloadcssdefined=d)(s),a};"undefined"!=typeof exports?exports.loadCSS=e:u.loadCSS=e}("undefined"!=typeof global?global:this),function(r){if(r.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return r.document.createElement("link").relList.supports("preload")}catch(e){return!1}},e.poly=function(){for(var e=r.document.getElementsByTagName("link"),t=0;t<e.length;t++){var n=e[t];"preload"===n.rel&&"style"===n.getAttribute("as")&&(r.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var t=r.setInterval(e.poly,300);r.addEventListener&&r.addEventListener("load",function(){e.poly(),r.clearInterval(t)}),r.attachEvent&&r.attachEvent("onload",function(){r.clearInterval(t)})}}}(this);</script>
 
     
   </head>
@@ -26,9 +281,9 @@
     <script type="x/boundary" id="fastboot-body-start"></script><div id="ember230" class="ember-view"><nav id="nav">
   <button id="nav__button" aria-label="Toggle Navigation">
     <svg id="nav__icon" viewbox="0 0 50 50">
-      <line x1="15" x2="35" y1="15px" y2="1em" stroke="white" stroke-width="5" stroke-linecap="round" class="top"></line>
-      <line x1="15" x2="35" y1="25px" y2="25px" stroke="white" stroke-width="5" stroke-linecap="round" class="middle"></line>
-      <line x1="15" x2="35" y1="35px" y2="1em" stroke="white" stroke-width="5" stroke-linecap="round" class="bottom"></line>
+      <line x1="15" x2="35" y1="15px" y2="1em" stroke="white" stroke-width="5" stroke-linecap="round" class="top"/>
+      <line x1="15" x2="35" y1="25px" y2="25px" stroke="white" stroke-width="5" stroke-linecap="round" class="middle"/>
+      <line x1="15" x2="35" y1="35px" y2="1em" stroke="white" stroke-width="5" stroke-linecap="round" class="bottom"/>
     </svg>
   </button>
 
@@ -235,9 +490,9 @@
 </div>
 </div><script type="x/boundary" id="fastboot-body-end"></script>
 
-    <script src="/assets/vendor-a80aa1b2d90cd9d47ec2b1038a559e2e.js" integrity="sha256-G1SnCxSxJX2LUZl3WHWpRT9v3c0geavyX2J/COyPIz0= sha512-zTrYDXjZ3jDY6N4bHzB7IGTuqbcgVzKkW1L9+CLdXjtLBbwBOIZ1pxnK0xWd2nqeJ3qP/AZkQiOVHE79txXvfw==" ></script>
-    <script src="/assets/ming-codes-9382150d4ce8458be0d1866f06f9814d.js" integrity="sha256-YYF/go4SmyZXqGvBcWVrRMIo/9Vp4zzmMmvkttTd+gY= sha512-zYJAFiBY88A0s0bDzk95gFVugrrDtkrxjtifP6YIqr24C2BfO+MXJGipmarnQ95qZi/Tw4irxVaVYrNBSfDcvg==" ></script>
+    <script src="/assets/vendor-143ee2efe5d3c711aac82105810dae7c.js" integrity="sha256-5MZNYCzfQfYmN1ZzpFVKDDPgEG/LSjYoMKjtdFB1L9U= sha512-q+Vs9WwAMMmDyQRfNZdAsYaBdZdSRgOCnyB81Lxk4XJoxhviwKlUQSyoFxuKxFcD1pEqxdg+Oe/GXOhnMurIPw=="></script>
+    <script src="/assets/ming-codes-ad2c1b0fa02bc15c52d127b3dbae6161.js" integrity="sha256-8vPaPOtOX+pjHWlFhpLQXHLgvd+PthIcoWH+cxLJBqQ= sha512-FWiewXh3Gom8Gsg6RSIjqG2nQcgnKu+vKb6WRSUzjCkdow2Cp5ylhBClDcpKkikVzOrDAEqxmy1zQqNu04f+Kw=="></script>
 
-    <script src="/sw-registration-96562d3f04aac78eb85b38ec252eac9a.js" integrity="sha256-m9taKmEombeKW3ABisX58cE1OIW7P1UxEgJxvbasBpE= sha512-KSw98VPHlicvLPY/RsFAVNSsOvfipKkx+Zrnlz1IBLroWJtkm4WgLXZcdzsDmkCttblhlchmGiiCQ6tAy8UBtQ==" ></script>
+    <script src="/sw-registration-96562d3f04aac78eb85b38ec252eac9a.js" integrity="sha256-m9taKmEombeKW3ABisX58cE1OIW7P1UxEgJxvbasBpE= sha512-KSw98VPHlicvLPY/RsFAVNSsOvfipKkx+Zrnlz1IBLroWJtkm4WgLXZcdzsDmkCttblhlchmGiiCQ6tAy8UBtQ=="></script>
   </body>
 </html>
