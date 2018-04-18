@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+00f4a5d9%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
+<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+e96a9400%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#fff">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,10 +22,28 @@
 
       @import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700);
 
+      @import url(https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap-reboot.min.css);
+
+      h2,
+      h3 {
+        font-weight: 700;
+      }
+
+      h3 {
+        color: #2b2b3d;
+        line-height: 1;
+      }
+
       .hbox,
       .vbox {
         display: inline-flex;
         list-style: none;
+      }
+
+      #nav__list,
+      h3 {
+        text-transform: uppercase;
+        margin: 0;
       }
 
       #nav__list,
@@ -34,14 +52,8 @@
         list-style: none;
       }
 
-      #about__cv h3,
-      #nav__list {
-        text-transform: uppercase;
-      }
-
-      #about__cv h3 {
+      h3 {
         line-height: 1;
-        color: #2b2b3d;
       }
 
       * {
@@ -49,7 +61,21 @@
         color: inherit;
         box-sizing: border-box;
         -webkit-backface-visibility: hidden;
-        margin: 0;
+      }
+
+      h2 {
+        margin: 0 0 5px;
+        color: #bebece;
+        font-size: 18px;
+        line-height: 1.8em;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      article {
+        margin-bottom: 40px;
       }
 
       .vbox {
@@ -103,7 +129,6 @@
       #nav__list {
         font-family: Lato;
         letter-spacing: 5px;
-        margin: 0;
         padding: 15.625%;
         background: rgba(0,0,0,.9);
         justify-content: center;
@@ -122,8 +147,6 @@
       @media screen {
         #about__profile {
           position: relative;
-          color: #fff;
-          text-shadow: 0 0 5px #000;
         }
 
         #about__profile,
@@ -145,6 +168,12 @@
 
         #about__cv section {
           padding: 50px 15.625%;
+        }
+
+        #about__profile,
+        #about__profile__headline {
+          color: #fff;
+          text-shadow: 0 0 5px #000;
         }
       }
 
@@ -205,6 +234,7 @@
       }
 
       #about__profile__social a {
+        color: #fff;
         display: block;
         font-size: 12px;
         width: 34px;
@@ -214,26 +244,8 @@
         background-color: #f9f9f9;
       }
 
-      #about__cv h2 {
-        margin-bottom: 5px;
-        color: #bebece;
-        font-size: 18px;
-        line-height: 1.8em;
-        font-weight: 700;
-      }
-
-      #about__cv h3 {
-        margin: 0;
-        font-weight: 700;
-        font-size: 16px;
-      }
-
       #about__cv p {
         margin: 0 0 16px;
-      }
-
-      #about__cv article {
-        margin-bottom: 40px;
       }
 
       .fa {
@@ -271,8 +283,8 @@
     </style>
     <link integrity="" rel="preload" href="/assets/vendor-cb587864e2d03b72320aa90c864ca6c8.57ef89ca.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link integrity="" rel="stylesheet" href="/assets/vendor-cb587864e2d03b72320aa90c864ca6c8.57ef89ca.css"></noscript>
-    <link integrity="" rel="preload" href="/assets/ming-codes-f37db7d30088ec2ac1e0c35e8fe61e3e.669669ea.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link integrity="" rel="stylesheet" href="/assets/ming-codes-f37db7d30088ec2ac1e0c35e8fe61e3e.669669ea.css"></noscript>
+    <link integrity="" rel="preload" href="/assets/ming-codes-8b452b6c8458411c1c64551152a0e35d.78b0436b.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link integrity="" rel="stylesheet" href="/assets/ming-codes-8b452b6c8458411c1c64551152a0e35d.78b0436b.css"></noscript>
     <script>!function(u){"use strict";var e=function(e,t,n){var r,o=u.document,a=o.createElement("link");if(t)r=t;else{var l=(o.body||o.getElementsByTagName("head")[0]).childNodes;r=l[l.length-1]}var i=o.styleSheets;a.rel="stylesheet",a.href=e,a.media="only x",function e(t){if(o.body)return t();setTimeout(function(){e(t)})}(function(){r.parentNode.insertBefore(a,t?r:r.nextSibling)});var d=function(e){for(var t=a.href,n=i.length;n--;)if(i[n].href===t)return e();setTimeout(function(){d(e)})};function s(){a.addEventListener&&a.removeEventListener("load",s),a.media=n||"all"}return a.addEventListener&&a.addEventListener("load",s),(a.onloadcssdefined=d)(s),a};"undefined"!=typeof exports?exports.loadCSS=e:u.loadCSS=e}("undefined"!=typeof global?global:this),function(r){if(r.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return r.document.createElement("link").relList.supports("preload")}catch(e){return!1}},e.poly=function(){for(var e=r.document.getElementsByTagName("link"),t=0;t<e.length;t++){var n=e[t];"preload"===n.rel&&"style"===n.getAttribute("as")&&(r.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var t=r.setInterval(e.poly,300);r.addEventListener&&r.addEventListener("load",function(){e.poly(),r.clearInterval(t)}),r.attachEvent&&r.attachEvent("onload",function(){r.clearInterval(t)})}}}(this);</script>
 
     
@@ -375,11 +387,11 @@
       <h2>Experience</h2>
 
         <article>
-          <small>
+          <time>
             Feb 2015
             ~
               Present
-          </small>
+          </time>
           <h3>
             Tech Yahoo, Senior Software System Development Engineer (IC4)
           </h3>
@@ -395,11 +407,11 @@
           -->
         </article>
         <article>
-          <small>
+          <time>
             May 2013
             ~
               Jan 2015
-          </small>
+          </time>
           <h3>
             UI Engineer
           </h3>
@@ -415,11 +427,11 @@
           -->
         </article>
         <article>
-          <small>
+          <time>
             Apr 2012
             ~
               Mar 2013
-          </small>
+          </time>
           <h3>
             Software Engineer, Front-end
           </h3>
@@ -435,11 +447,11 @@
           -->
         </article>
         <article>
-          <small>
+          <time>
             Sep 2011
             ~
               Feb 2012
-          </small>
+          </time>
           <h3>
             Mobile Web Developer
           </h3>
@@ -455,11 +467,11 @@
           -->
         </article>
         <article>
-          <small>
+          <time>
             Jun 2010
             ~
               Aug 2011
-          </small>
+          </time>
           <h3>
             Software Engineer I
           </h3>
@@ -479,7 +491,7 @@
     <section id="about__cv__education">
       <h2>Education</h2>
         <article>
-          <small>2010</small>
+          <time>2010</time>
           <h3>BS in Software Engineering</h3>
           <h4>California Polytechnic State University</h4>
 
@@ -491,7 +503,7 @@
 </div><script type="x/boundary" id="fastboot-body-end"></script>
 
     <script src="/assets/vendor-143ee2efe5d3c711aac82105810dae7c.js" integrity="sha256-5MZNYCzfQfYmN1ZzpFVKDDPgEG/LSjYoMKjtdFB1L9U= sha512-q+Vs9WwAMMmDyQRfNZdAsYaBdZdSRgOCnyB81Lxk4XJoxhviwKlUQSyoFxuKxFcD1pEqxdg+Oe/GXOhnMurIPw=="></script>
-    <script src="/assets/ming-codes-ad2c1b0fa02bc15c52d127b3dbae6161.js" integrity="sha256-8vPaPOtOX+pjHWlFhpLQXHLgvd+PthIcoWH+cxLJBqQ= sha512-FWiewXh3Gom8Gsg6RSIjqG2nQcgnKu+vKb6WRSUzjCkdow2Cp5ylhBClDcpKkikVzOrDAEqxmy1zQqNu04f+Kw=="></script>
+    <script src="/assets/ming-codes-c4e002f8d365e7968e11b2bc3db53a06.js" integrity="sha256-t+xg7zPIpkiZKzgy86jQvX+gKCv4IVqK3wTsFUVQVGg= sha512-H3I37R75qOPp8FSGpGxpo8fb1RqQ1JVATFPH/6+1z+zyJL83Vghi/HFwtGA1HH3TJWhfOcI1R7AQn7zrAKa5Mw=="></script>
 
     <script src="/sw-registration-96562d3f04aac78eb85b38ec252eac9a.js" integrity="sha256-m9taKmEombeKW3ABisX58cE1OIW7P1UxEgJxvbasBpE= sha512-KSw98VPHlicvLPY/RsFAVNSsOvfipKkx+Zrnlz1IBLroWJtkm4WgLXZcdzsDmkCttblhlchmGiiCQ6tAy8UBtQ=="></script>
   </body>
