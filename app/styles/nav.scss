@@ -1,3 +1,9 @@
+.ember-application {
+  &.open-navigation {
+    overflow: hidden;
+  }
+}
+
 #nav {
   &__button {
     top: 5px;

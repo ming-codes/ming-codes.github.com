@@ -203,7 +203,7 @@ export default Route.extend({
           name: 'BS in Software Engineering',
           issuer: 'California Polytechnic State University',
           location: 'San Luis Obispo, CA',
-          year: 2010
+          completion: moment('2010', 'YYYY')
         }
       ]
     };

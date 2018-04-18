@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700");
-
-@import "framework";
+@import "framework/identity";
+@import "framework/elements";
+@import "framework/layout";
 @import "nav";
 
 @import "about";

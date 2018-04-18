@@ -49,7 +49,7 @@
 
       {{#each model.experience as |experience|}}
         <article>
-          <small>
+          <time>
             {{moment-format experience.timeframe.start "MMM YYYY"}}
             ~
             {{#if experience.timeframe.end}}
@@ -57,7 +57,7 @@
             {{else}}
               Present
             {{/if}}
-          </small>
+          </time>
           <h3>
             {{experience.titles.firstObject.name}}
           </h3>
@@ -80,7 +80,7 @@
       <h2>Education</h2>
       {{#each model.education as |education|}}
         <article>
-          <small>{{education.year}}</small>
+          <time>{{moment-format education.completion "YYYY"}}</time>
           <h3>{{education.name}}</h3>
           <h4>{{education.issuer}}</h4>
 

@@ -1,0 +1,15 @@
+.vbox {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.hbox {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.hide {
+  display: none;
+}
