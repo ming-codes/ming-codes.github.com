@@ -5,6 +5,10 @@
       <h1>{{post.title}}</h1>
 
       {{{post.content}}}
+
+      <a href="{{post.commentURL}}" target="_blank" rel="noopener">
+        {{post.commentCount}} comments
+      </a>
     </article>
   {{/each}}
 </div>
