@@ -17,6 +17,11 @@
   text-align: center;
 }
 
+.fa-inverse,
+.hljs {
+  color: #fff;
+}
+
 @font-face {
   font-family: FontAwesome;
   src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
@@ -169,10 +174,6 @@
 
 .fa-stack-2x {
   font-size: 2em;
-}
-
-.fa-inverse {
-  color: #fff;
 }
 
 .fa-glass:before {
@@ -3016,4 +3017,58 @@
 .animated-container:before {
   content: ' ';
   display: table;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  background: #222;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #777;
+}
+
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-bullet,
+.hljs-deletion,
+.hljs-link,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-params,
+.hljs-regexp,
+.hljs-symbol,
+.hljs-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #ab875d;
+}
+
+.hljs-attribute,
+.hljs-name,
+.hljs-section,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-title,
+.hljs-type {
+  color: #9b869b;
+}
+
+.hljs-addition,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-string {
+  color: #8f9c6c;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
 }

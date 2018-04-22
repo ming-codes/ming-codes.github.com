@@ -131,3 +131,13 @@ time {
 #blog article {
   padding: 0 15.625%;
 }
+
+#blog pre {
+  margin: 1.6em -10%;
+  padding: 10px;
+  border: 1px solid #e3edf3;
+  font-family: Inconsolata,monospace,sans-serif;
+  font-size: .9em;
+  background: #f7fafb;
+  border-radius: 3px;
+}
