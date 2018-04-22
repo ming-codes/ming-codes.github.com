@@ -13,6 +13,11 @@ h4 {
   line-height: 1;
 }
 
+#blog pre code,
+.open-navigation #nav__button {
+  background: 0 0;
+}
+
 @page {
   margin: 0;
 }
@@ -71,10 +76,6 @@ time {
   transform: perspective(200px) translateZ(0);
 }
 
-.open-navigation #nav__button {
-  background: 0 0;
-}
-
 #nav__button__icon {
   width: 45px;
   height: 45px;
@@ -123,21 +124,38 @@ time {
 
 #blog {
   min-width: 320px;
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 75px 0;
+  padding: 75px 15.625vw;
 }
 
 #blog article {
-  padding: 0 15.625%;
+  box-sizing: content-box;
+  max-width: 70ch;
+  margin: 0 auto 40px;
+}
+
+#blog pre code {
+  border: 0;
+  padding: 0;
+  white-space: pre-wrap;
 }
 
 #blog pre {
   margin: 1.6em -10%;
   padding: 10px;
   border: 1px solid #e3edf3;
-  font-family: Inconsolata,monospace,sans-serif;
   font-size: .9em;
+  white-space: pre;
+  overflow: auto;
   background: #f7fafb;
   border-radius: 3px;
+}
+
+#blog code {
+  padding: 1px 3px;
+  font-family: Inconsolata,monospace,sans-serif;
+  font-size: .85em;
+  white-space: pre-wrap;
+  border: 1px solid #e3edf3;
+  background: #f7fafb;
+  border-radius: 2px;
 }
