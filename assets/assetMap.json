@@ -1,14 +1,17 @@
 {
   "assets": {
+    "P13.jpg": "P13-f0dc32b3c945ed57c001305d2938d70f.jpg",
+    "P17.jpg": "P17-47625f6a12a9c1d3a0ef03e7e2290780.jpg",
+    "P18.jpg": "P18-a2a2ed700d84340da327ee1ea5e0b65e.jpg",
     "assets/assetMap.json": "assets/assetMap.json",
     "assets/ming-codes-fastboot.js": "assets/ming-codes-fastboot-e9b9c3bb6ccc5b8c5ae1d28a126d3fdf.js",
-    "assets/ming-codes.css": "assets/ming-codes-c9777f116d74267fe3dcce8a57cf4fd5.css",
-    "assets/ming-codes.js": "assets/ming-codes-1b84e76d18ba7139db38bbe85bcc56f1.js",
+    "assets/ming-codes.css": "assets/ming-codes-4eb067be2fa6a806059447734e597b53.css",
+    "assets/ming-codes.js": "assets/ming-codes-2449033518c286b82bee939f02d414d7.js",
     "assets/vendor.css": "assets/vendor-87b2374ac52a549e2fae0d5b4298516c.css",
     "assets/vendor.js": "assets/vendor-3c32a7d59c370a0d092b9f028ea4c001.js",
     "moment/fastboot-moment-timezone.js": "moment/fastboot-moment-timezone-578ab4bc24839c1fa18fc484b2cf5d0d.js",
     "moment/fastboot-moment.js": "moment/fastboot-moment-fc1d02c2a35021ee4ca1a6f87a5a64c7.js",
-    "profile.jpg": "profile-85671a7153d8a56a403c4d6b2481e052.jpg",
+    "profile.jpg": "profile-0aa83237782071c3937be8ad7fb33b77.jpg",
     "sw-registration.js": "sw-registration-96562d3f04aac78eb85b38ec252eac9a.js"
   },
   "prepend": ""
