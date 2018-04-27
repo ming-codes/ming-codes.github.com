@@ -9,7 +9,7 @@
     <meta name="google-site-verification" content="ulwt3jRsFaToA1cMQ7JmCLGJ8DomlepDhXs7SyGvZKs">
 
     
-<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+4e370ab7%22%7D%2C%22metricsAdapters%22%3A%5B%7B%22name%22%3A%22Mixpanel%22%2C%22environments%22%3A%5B%22production%22%5D%2C%22config%22%3A%7B%22token%22%3A%2237df4cb00facdc1787b7e3923dbc7826%22%7D%7D%5D%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
+<meta name="ming-codes/config/environment" content="%7B%22modulePrefix%22%3A%22ming-codes%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ming-codes%22%2C%22version%22%3A%220.0.0+f8e3949d%22%7D%2C%22metricsAdapters%22%3A%5B%7B%22name%22%3A%22Mixpanel%22%2C%22environments%22%3A%5B%22production%22%5D%2C%22config%22%3A%7B%22token%22%3A%2237df4cb00facdc1787b7e3923dbc7826%22%7D%7D%5D%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#fff">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -215,8 +215,9 @@
           padding: 50px 15.625%;
         }
 
-        #about__profile,
-        #about__profile__headline {
+        #about__profile__headline,
+        #about__profile__name,
+        #about__profile__social i {
           color: #fff;
           text-shadow: 0 0 5px #000;
         }
@@ -250,7 +251,10 @@
 
       #about__profile__headshot::before {
         content: "";
-        background: linear-gradient(-30deg,rgba(42,84,245,.5) 0,rgba(42,84,245,.5) 40%,transparent 60%,transparent 100%);
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: radial-gradient(at 50% 40%,transparent,#000610);
       }
 
       #about__profile__info {
@@ -279,7 +283,6 @@
       }
 
       #about__profile__social a {
-        color: #fff;
         display: block;
         font-size: 12px;
         width: 34px;
@@ -328,8 +331,8 @@
     </style>
     <link integrity="" rel="preload" href="/assets/vendor-87b2374ac52a549e2fae0d5b4298516c.c08ade3a.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link integrity="" rel="stylesheet" href="/assets/vendor-87b2374ac52a549e2fae0d5b4298516c.c08ade3a.css"></noscript>
-    <link integrity="" rel="preload" href="/assets/ming-codes-4eb067be2fa6a806059447734e597b53.0e80be74.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link integrity="" rel="stylesheet" href="/assets/ming-codes-4eb067be2fa6a806059447734e597b53.0e80be74.css"></noscript>
+    <link integrity="" rel="preload" href="/assets/ming-codes-5b091b9b1e7c6794079c15e4cb6fc082.0e80be74.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link integrity="" rel="stylesheet" href="/assets/ming-codes-5b091b9b1e7c6794079c15e4cb6fc082.0e80be74.css"></noscript>
     <script>!function(u){"use strict";var e=function(e,t,n){var r,o=u.document,a=o.createElement("link");if(t)r=t;else{var l=(o.body||o.getElementsByTagName("head")[0]).childNodes;r=l[l.length-1]}var i=o.styleSheets;a.rel="stylesheet",a.href=e,a.media="only x",function e(t){if(o.body)return t();setTimeout(function(){e(t)})}(function(){r.parentNode.insertBefore(a,t?r:r.nextSibling)});var d=function(e){for(var t=a.href,n=i.length;n--;)if(i[n].href===t)return e();setTimeout(function(){d(e)})};function s(){a.addEventListener&&a.removeEventListener("load",s),a.media=n||"all"}return a.addEventListener&&a.addEventListener("load",s),(a.onloadcssdefined=d)(s),a};"undefined"!=typeof exports?exports.loadCSS=e:u.loadCSS=e}("undefined"!=typeof global?global:this),function(r){if(r.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return r.document.createElement("link").relList.supports("preload")}catch(e){return!1}},e.poly=function(){for(var e=r.document.getElementsByTagName("link"),t=0;t<e.length;t++){var n=e[t];"preload"===n.rel&&"style"===n.getAttribute("as")&&(r.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var t=r.setInterval(e.poly,300);r.addEventListener&&r.addEventListener("load",function(){e.poly(),r.clearInterval(t)}),r.attachEvent&&r.attachEvent("onload",function(){r.clearInterval(t)})}}}(this);</script>
 
     
@@ -588,7 +591,7 @@
 </div><script type="x/boundary" id="fastboot-body-end"></script>
 
     <script src="/assets/vendor-3c32a7d59c370a0d092b9f028ea4c001.js" integrity="sha256-1LITeDrgZNagQJZcx2o+3naxfwbmDChFIPNRexhDC38= sha512-gkc9zOzChxexM5zp8OVfmKGc4+sO3fKAlVUJtwJE8CGx3WJpTYttdgpEQLU9+Sr9tb16imB0GLI63Efzj+TrKg=="></script>
-    <script src="/assets/ming-codes-2449033518c286b82bee939f02d414d7.js" integrity="sha256-8elJGOIRGg3TWcUHi7IxAyRzNq/WX2vwNWEux3FdipE= sha512-ugAcewqJ1PYvGMz3EZBm0pId/DJKYqa9LmNHXKO48a5nxt9ovfzforrdlh86Zv+bbYbU6fhaqzFYfs16mnDS2Q=="></script>
+    <script src="/assets/ming-codes-5632127c2eaeeb48071a247adcd493f0.js" integrity="sha256-h5qqDnsYPDGAi/BRVMvXhOLcWMbw8GZJ6r/TttDuM0s= sha512-fpHaNQUmN8nJAnXjRAsGB3kNagtThmxpOyJtk5tUlaTXLtVG9ZlZXUahZpeRd+p/RxL+EdIGNesuU/pc3ytldQ=="></script>
 
     <script src="/sw-registration-96562d3f04aac78eb85b38ec252eac9a.js" integrity="sha256-m9taKmEombeKW3ABisX58cE1OIW7P1UxEgJxvbasBpE= sha512-KSw98VPHlicvLPY/RsFAVNSsOvfipKkx+Zrnlz1IBLroWJtkm4WgLXZcdzsDmkCttblhlchmGiiCQ6tAy8UBtQ=="></script>
   </body>
